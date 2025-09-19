@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodoingGita University - Admission & Internet Survery Form</title>
+</head>
+<body>
+<header>
+  <h1>CoidngGita University - Admission + Internet Survery Form</h1>
+  <p>Please fill out this applicaiton form completely. Your admission will be dconsidered along with the internet usage survey for researcch purposes.</p>
+</header>
+
+<main>
+  <form action="#" id="admissionForm" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+      <legend>Perosnal Information</legend>
+   
+
+    <p>
+      <label for="fname">Full Name <strong>*</strong></label><br>
+      <input type="text" name="fname" id="fname" placeholder="Enter your full name" aria-label="Enter your complete full name" required tabindex="1" >
+    </p>
+
+    <p>
+      <label for="fatherName">Father's Name</label><br>
+      <input type="text" name="fatherName" id="fatherName" placeholder="Enter father's name" tabindex="2">
+    </p>
+
+    <p>
+      <label for="motherName">Mother's Name</label><br>
+      <input type="text" name="motherName" id="motherName" placeholder="Enter mother's name" tabindex="3">
+    </p>
+
+    <p>
+      <label for="email">Email Address</label><br>
+      <input type="eamil" name="email" id="email" placeholder="Enter your email ddress" required
+      tabindex="4">
+    </p>
+
+    <p>
+      <label for="phone">Phone Number</label><br>
+      <input type="tel" name="phone" min="6000000000" max="9999999999" id="phone" placeholder="Enter 10 digit phone number" aria-describedby="phoneHint"required tabindex="5"><br>
+      <small id="phoneHint">Enter a valid 10-digit Indian mobile number (6000000000-9999999999) </small>
+    </p>
+
+    <p>
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="dob" required
+      tabindex="6">
+    </p>
+
+    <fieldset>
+      <legend>Gender</legend>
+      <p>
+        <input type="radio" id="male" name="gender" value="male" tabindex="7">
+        <label for="male">Male</label>
+      </p>
+      <p>
+        <input type="radio" name="gender" id="female" value="female" tabindex="8">
+        <label for="female">Female</label>
+      </p>
+      <p>
+        <input type="radio" name="gender" id="other" value="other" tabindex="9">
+        <label for="other">Other</label>
+      </p>
+    </fieldset>
+
+    <p>
+      <label for="nationality">Nationality</label>
+      <select name="nationality" id="nationality" tabindex="10">
+        <option value="">Select Nationality</option>
+        <option value="indian">Indian</option>
+        <option value="nri">NRI</option>
+        <option value="other">Other</option>
+      </select>
+    </p>
+   </fieldset>
+
+   <fieldset>
+    <legend>Academic Details</legend>
+
+    <p>
+      <label for="quailfication">Highest Qualification</label><br>
+      <select name="qualificaiton" id="qualification" tabindex="12">
+        <option value="">Select Qualification</option>
+        <option value="10th">10th Standard</option>
+        <option value="12th">12th Standard</option>
+        <option value="diploma">Diploma</option>
+        <option value="graduate">Graduate</option>
+        <option value="postgraduate">Post Graduate</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="stream">Stream</label><br>
+      <select name="stream" id="stream" tabindex="13">
+        <option value="">Select Stream</option>
+        <option value="Science">Science</option>
+        <option value="Commerce">Commerce</option>
+        <option value="arts">Arts</option>
+        <option value="engineering">Engineering</option>
+        <option value="medical">Medical</option>
+        <option value="other">Other</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="percentage">Percentage/CGPA <strong>*</strong></label><br>
+      <input type="number" name="percentage" id="percentage" min="0" max="100" step="0.01" placeholder="Enter percentage or CGPA" required tabindex="14">
+    </p>
+    <p>
+      <label for="yearOfPassing">Year of Passing</label><br>
+      <input type="number" id="yearOfPassing" name="yearOfPassing" min="1990" max="2025" placeholder="YYYY" tabindex="15">
+    </p>
+
+    <fieldset>
+      <legend>Subjects Studied</legend>
+      <p>
+        <input type="checkbox" name="Subjects" id="physics" value="physics" tabindex="16">
+      <label for="physics">Physics</label>
+    </p>
+    <p>
+        <input type="checkbox" name="Subjects" id="chemistry" value="chemistry" tabindex="17">
+      <label for="chemistry">Chemistry</label>
+    </p>
+    <p>
+        <input type="checkbox" name="Subjects" id="Math" value="Math" tabindex="16">
+      <label for="Math">Math</label>
+    </p>
+    <p>
+        <input type="checkbox" name="Subjects" id="Biology" value="Biology" tabindex="16">
+      <label for="physics">Biology</label>
+    </p>
+    </fieldset>
+
+    <p>
+      <label for="certificate">Upload Certificates</label><br>
+      <input type="file" name="certificate" id="certificate" multiple aria-label="Upload your certificate" tabindex="23">
+    </p>
+
+    <p>
+      <label for="preferredCourse">Preffered Course</label>
+      <select name="preferredCourse" id="preferredCourse" tabindex="24">
+        <option value="">Select Course</option>
+        <option value="mern">MERN Stack</option>
+        <option value="dsa">DSA Bootcamp</option>
+        <option value="ai">AI/ML</option>
+        <option value="webdev">Web Development</option>
+        <option value="cloud">Cloud Computing</option>
+      </select>
+    </p>
+
+   </fieldset>
+
+   <fieldset>
+    <legend>Internet Usage & Skills Survey</legend>
+
+    <fieldset>
+      <legend>Internet Access</legend>
+       <p><input type="radio" id="internetYes" name="internetAccess" value="Yes" tabindex="30"><label for="internetYes">Yes</label></p>
+        <p><input type="radio" id="internetNo" name="internetAccess" value="No" tabindex="31"><label for="internetNo">No</label></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Devices Used Daily</legend>
+        <p><input type="checkbox" id="deviceLaptop" name="devices" value="Laptop" tabindex="32"><label for="deviceLaptop">Laptop</label></p>
+        <p><input type="checkbox" id="deviceMobile" name="devices" value="Mobile" tabindex="33"><label for="deviceMobile">Mobile</label></p>
+        <p><input type="checkbox" id="deviceTablet" name="devices" value="Tablet" tabindex="34"><label for="deviceTablet">Tablet</label></p>
+        <p><input type="checkbox" id="deviceDesktop" name="devices" value="Desktop" tabindex="35"><label for="deviceDesktop">Desktop</label></p>
+    </fieldset>
+
+     <p>
+        <label for="averageUsage">Average Daily Usage</label><br>
+        <select name="averageUsage" id="averageUsage" tabindex="36">
+          <option value=""><1 hour</option>
+          <option value="1-3">1–3 hours</option>
+          <option value="3-6">3–6 hours</option>
+          <option value="6+">6+ hours</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="studyTime">Preferred Study Time</label><br>
+        <input type="time" name="studyTime" id="studyTime" tabindex="37">
+      </p>
+
+      <p>
+        <label for="weeklyDataUsage">Weekly Data Usage (GB)</label><br>
+        <input type="range" id="weeklyDataUsage" name="weeklyDataUsage" min="1" max="100" aria-label="Drag to select GB usage" tabindex="38">
+      </p>
+
+      <p>
+        <label for="socialPlatform">Favorite Social Platform</label><br>
+        <input list="platforms" name="socialPlatform" id="socialPlatform" placeholder="Select or type platform" tabindex="39">
+        <datalist id="platforms">
+          <option value="YouTube">
+          <option value="Instagram">
+          <option value="LinkedIn">
+          <option value="Discord">
+          <option value="GitHub">
+          <option value="Twitter">
+        </datalist>
+      </p>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <p><input type="checkbox" id="skillHTML" name="skills" value="HTML" tabindex="40"><label for="skillHTML">HTML</label></p>
+        <p><input type="checkbox" id="skillCSS" name="skills" value="CSS" tabindex="41"><label for="skillCSS">CSS</label></p>
+        <p><input type="checkbox" id="skillJS" name="skills" value="JS" tabindex="42"><label for="skillJS">JavaScript</label></p>
+        <p><input type="checkbox" id="skillReact" name="skills" value="React" tabindex="43"><label for="skillReact">React</label></p>
+        <p><input type="checkbox" id="skillNode" name="skills" value="Node.js" tabindex="44"><label for="skillNode">Node.js</label></p>
+        <p><input type="checkbox" id="skillMongo" name="skills" value="MongoDB" tabindex="45"><label for="skillMongo">MongoDB</label></p>
+        <p><input type="checkbox" id="skillGit" name="skills" value="Git" tabindex="46"><label for="skillGit">Git</label></p>
+        <p><input type="checkbox" id="skillOther" name="skills" value="Other" tabindex="47"><label for="skillOther">Other</label></p>
+      </fieldset>
+
+      <p>
+        <label for="speedTest">Upload Internet Speed Test Screenshot</label><br>
+        <input type="file" name="speedTest" id="speedTest" accept="image/*" aria-label="Upload Internet Speed Test Screenshot" tabindex="48">
+      </p>
+
+      <p>
+        <label for="favColor">Pick your favorite color</label><br>
+        <input type="color" name="favColor" id="favColor" tabindex="49">
+      </p>
+
+      <p>
+        <label for="internetSatisfaction">Internet Satisfaction (1–10)</label><br>
+        <input type="range" name="internetSatisfaction" id="internetSatisfaction" min="1" max="10" aria-label="How satisfied are you with your internet speed?" tabindex="50">
+      </p>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Declaration & Final Submission</legend>
+
+      <p>
+        <label for="whyJoin">Why do you want to join CodingGita? <strong>*</strong></label><br>
+        <textarea name="whyJoin" id="whyJoin" rows="4" placeholder="Explain your motivation" required aria-label="Why do you want to join CodingGita?" tabindex="51"></textarea>
+      </p>
+
+      <p>
+        <label for="internetHelp">How has the Internet helped your education?</label><br>
+        <textarea name="internetHelp" id="internetHelp" rows="4" placeholder="Describe how Internet helped your learning" tabindex="52"></textarea>
+      </p>
+
+      <fieldset>
+        <legend>Would you recommend CodingGita to friends?</legend>
+        <p><input type="radio" id="recommendYes" name="recommend" value="Yes" tabindex="53"><label for="recommendYes">Yes</label></p>
+        <p><input type="radio" id="recommendNo" name="recommend" value="No" tabindex="54"><label for="recommendNo">No</label></p>
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="declaration" name="declaration" required tabindex="55">
+        <label for="declaration">I hereby declare that the information provided above is true to the best of my knowledge.</label>
+      </p>
+
+      <p>
+        <label for="signature">Upload Signature (JPG/PNG)</label><br>
+        <input type="file" name="signature" id="signature" accept=".jpg,.png" aria-label="Upload Signature" tabindex="56">
+      </p>
+
+      <p>
+        <label for="submissionDate">Date of Submission</label><br>
+        <input type="date" name="submissionDate" id="submissionDate" value="" tabindex="57">
+      </p>
+
+      <p>
+        <button type="submit" aria-label="Submit your application" tabindex="58">Submit Application</button>
+        <button type="reset" tabindex="59">Clear Form</button>
+      </p>
+
+    </fieldset>
+   
+
+  </form>
+</main>
+</body>
+</html>

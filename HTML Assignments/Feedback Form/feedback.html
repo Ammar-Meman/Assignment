@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback <Form></Form></title>
+</head>
+<body>
+  <hr>
+  <h1>CodingGita Feedback Form</h1>
+  <p>We value your feedback. Please fill out this form to help us improve</p>
+<hr>
+
+  <form action="#" method="post">
+
+    <label for="name">Name:</label>
+    <input type="name" id="name">
+
+<br>
+<br>    
+
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+
+<br>
+<br>
+
+    <label for="feedback">Which course/workshop are you giving feedback for?</label>
+    <br>
+    <select name="feedback" id="feedback">
+      <option value="MERN Stack Course">MERN Stack Course</option>
+      <option value="DSA Bootcamp">DSA Bootcamp</option>
+      <option value="Web Development Workshop">Web Development Workshop</option>
+    </select>
+
+<br>
+<br>
+
+    <label for="Rate">Rate your experience:</label>
+<br>
+    <input type="radio" name="star" id="Rate">
+    <label for="Rate">1 Star</label>
+    <input type="radio" name="star" id="Rate1">
+    <label for="Rate1">2 Star</label>
+    <input type="radio" name="star" id="Rate2">
+    <label for="Rate2">3 Star</label>
+    <input type="radio" name="star" id="Rate3">
+    <label for="Rate3">4 Star</label>
+    <input type="radio" name="star" id="Rate4">
+    <label for="Rate4">5 Star</label>
+ <br>
+ <br>
+
+    <label for="aspects">What aspects are you giving feedback on?</label>
+<br>    
+    <input type="checkbox" name="feedback" id="aspects1">
+    <label for="aspects1">Content Quality</label>
+    <input type="checkbox" name="feedback" id="aspects2">
+    <label for="aspects2">Teaching method</label>
+    <input type="checkbox" name="feedback" id="aspects3">
+    <label for="aspects3">Support & Guidance</label>
+    <input type="checkbox" name="feedback" id="aspects4">
+    <label for="aspects4">Content Quality</label>
+
+<br>
+<br>
+
+    <label for="Suggestions">Additional Suggestions:</label>
+    <textarea name="Multi" id="Suggestions"></textarea>
+
+<br>
+<br>
+
+    <label for="satisfied">How satisfied are you?</label>
+    <input type="range" min="1" max="10">
+
+<br>
+<br>
+
+    <label for="recommend">Would you recommend us to a friend?</label>
+    <input type="radio" name="friend" id="recommend">
+    <label for="recommend">Yes</label>
+    <input type="radio" name="friend" id="recommend1">
+    <label for="recommend1">No</label>
+
+  <br>
+  <br>
+  
+    <label for="date">Date of Feedback</label>
+    <input type="date" id="date">
+
+ <br>
+ <br>
+ <hr>
+ <input type="submit">   
+ <input type="reset">
+ <hr>
+    
+
+  </form>
+</body>
+</html>
